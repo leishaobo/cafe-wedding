@@ -12,9 +12,9 @@ public class UserRoleTest {
 	public void test() {
 		BaseSecurityUserService userService=new BaseSecurityUserService();
 		UserDetails user= userService.loadUserByUsername("admin1");
-		if(user instanceof BaseSecurityUser){
+		if(user!=null && user instanceof BaseSecurityUser){
 			BaseSecurityUser bsu=(BaseSecurityUser)user;
-			System.out.println(bsu);
+			System.out.println(bsu.toString());
 		}
 	}
 

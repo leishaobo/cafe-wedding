@@ -38,13 +38,13 @@ public class BaseSecurityUser implements UserDetails {
 	@Override
 	public String getPassword() {
 		// TODO Auto-generated method stub
-		return null;
+		return password;
 	}
 
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return null;
+		return username;
 	}
 
 	@Override
@@ -116,11 +116,11 @@ public class BaseSecurityUser implements UserDetails {
 				for(BaseSecurityPrivilege privilege:role.getPrivileges()){
 					sb.append("{privilege:"+privilege+"},");
 				}
-				sb.deleteCharAt(sb.length());
+				sb.deleteCharAt(sb.length()-1);
 				sb.append("]");
 		}
 		sb.append("}");
-		return super.toString();
+		return sb.toString();
 	}
 	
 }

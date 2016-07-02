@@ -24,13 +24,13 @@ public class BaseSecurityUserDaoImpl implements BaseSecurityUserDao{
 		BaseSecurityResource resouce1=new BaseSecurityResource("login","login.jsp","登入界面");
 		BaseSecurityResource resouce2=new BaseSecurityResource("admin","admin.jsp","管理员界面");
 		
-		BaseSecurityRole admin=new BaseSecurityRole();
+		BaseSecurityRole admin=new BaseSecurityRole("admin","管理");
+		
 		admin.getPrivileges().addAll(BaseSecurityPrivilege.generateAllPrivileges(resouce1));
 		admin.getPrivileges().addAll(BaseSecurityPrivilege.generateAllPrivileges(resouce2));
 		
-		BaseSecurityRole common=new BaseSecurityRole();
+		BaseSecurityRole common=new BaseSecurityRole("common","普通");
 		common.getPrivileges().addAll(BaseSecurityPrivilege.generateAllPrivileges(resouce1));
-		common.getPrivileges().addAll(BaseSecurityPrivilege.generateAllPrivileges(resouce2));
 		
 		for(int i=0;i<10;i++){
 			BaseSecurityUser user=new BaseSecurityUser();
@@ -51,6 +51,7 @@ public class BaseSecurityUserDaoImpl implements BaseSecurityUserDao{
 	@Override
 	public BaseSecurityUser getUserByusername(String username) {
 		for(BaseSecurityUser user:testUsers){
+			//System.out.println(user.getUsername());
 			if(user.getUsername().equals(username)){
 				return user;
 			}

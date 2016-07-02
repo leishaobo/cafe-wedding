@@ -21,6 +21,17 @@ public class BaseSecurityRole {
 	private Set<BaseSecurityPrivilege> privileges=new HashSet<BaseSecurityPrivilege>();
 	
 	
+	
+
+	public BaseSecurityRole() {
+		super();
+	}
+
+	public BaseSecurityRole(String code, String name) {
+		super();
+		this.code = code;
+		this.name = name;
+	}
 
 	public String getCode() {
 		return code;
