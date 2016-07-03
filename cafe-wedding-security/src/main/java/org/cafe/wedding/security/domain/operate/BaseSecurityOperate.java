@@ -13,8 +13,8 @@ public enum BaseSecurityOperate {
 	INSERT("insert","插入"),
 	UPDATE("update","更新"),
 	SELECT("select","查询"),
-	DELETE("delete","删除"),
-	ALL("all","所有权限");
+	DELETE("delete","删除");
+	//ALL("all","所有权限");
 	private String code;
 	private String desc;
 	BaseSecurityOperate(String code,String desc){

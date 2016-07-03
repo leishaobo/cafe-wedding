@@ -7,6 +7,7 @@ import java.util.Set;
 import org.cafe.wedding.security.domain.operate.BaseSecurityOperate;
 import org.cafe.wedding.security.domain.resources.BaseSecurityResource;
 import org.cafe.wedding.security.exception.CommonSecurityException;
+import org.springframework.security.core.GrantedAuthority;
 
 /**
  * 权限表
@@ -14,7 +15,7 @@ import org.cafe.wedding.security.exception.CommonSecurityException;
  * @author leishaobo
  *
  */
-public class BaseSecurityPrivilege {
+public class BaseSecurityPrivilege implements GrantedAuthority{
 	
 	private BaseSecurityResource resource;
 	private BaseSecurityOperate operate;
@@ -69,4 +70,33 @@ public class BaseSecurityPrivilege {
 		return privilegesSet;
 		
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o==null){
+			return false;
+		}
+		if(this==o){
+			return true;
+		}
+		if(!(o instanceof BaseSecurityPrivilege)){
+			return false;
+		}
+		BaseSecurityPrivilege that=(BaseSecurityPrivilege)o;
+		if(this.toString().equals(that.toString())){
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public String getAuthority() {
+		
+		if(this.resource==null || this.operate==null){
+			throw new CommonSecurityException("resource or operate is null");
+		}
+		return String.format("%s_%s", resource.getCode(),operate.getCode());
+	}
+	
+	
 }
