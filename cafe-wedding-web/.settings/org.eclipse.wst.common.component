@@ -12,6 +12,9 @@
         <dependent-module archiveName="cafe-wedding-common-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cafe-wedding-common/cafe-wedding-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="cafe-wedding-security-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cafe-wedding-security/cafe-wedding-security">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="cafe-wedding-web"/>
         <property name="java-output-path" value="/cafe-wedding-web/target/classes"/>
     </wb-module>
