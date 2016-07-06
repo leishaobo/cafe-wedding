@@ -15,7 +15,7 @@
 
 	<!-- 扫描注解组件并且自动的注入spring beans中. 
 	例如,他会扫描@Controller 和@Service下的文件.所以确保此base-package设置正确. -->
-	<context:component-scan base-package="org.liukai.tutorial" />
+	<context:component-scan base-package="com.cafe.wedding.web" />
 
 	<!-- 配置注解驱动的Spring MVC Controller 的编程模型.注:次标签只在 Servlet MVC工作! -->
 	<mvc:annotation-driven />
