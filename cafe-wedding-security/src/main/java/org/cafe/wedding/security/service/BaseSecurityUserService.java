@@ -10,7 +10,7 @@ public class BaseSecurityUserService implements UserDetailsService{
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-		return dao.getUserByusername(username);
+		return (UserDetails) dao.getUserByusername(username);
 	}
 
 }

@@ -36,9 +36,9 @@ public class BaseSecurityUserDaoImpl implements BaseSecurityUserDao{
 			BaseSecurityUser user=new BaseSecurityUser();
 			user.setUsername("admin"+i);
 			user.setPassword("admin"+i);
-			user.setAccountNonExpired(true);
-			user.setAccountNonLocked(true);
-			user.setCredentialsNonExpired(true);
+			//user.setAccountNonExpired(true);
+			//user.setAccountNonLocked(true);
+			//user.setCredentialsNonExpired(true);
 			if(i%2==0){
 				user.getRoles().add(admin);	
 			}else{
