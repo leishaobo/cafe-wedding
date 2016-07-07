@@ -11,4 +11,9 @@ public class LoginLogoutController {
 	public String login_ui(){
 		return "login";
 	}
+	
+	@RequestMapping("/index.html")
+	public String index_ui(){
+		return "index";
+	}
 }

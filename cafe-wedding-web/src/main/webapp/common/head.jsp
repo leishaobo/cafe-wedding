@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<%@ include file="./taglibs.jsp"  %>
+<link rel="stylesheet" href="${ctx}/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="${ctx}/lib/jquery-ui/css/custom-theme/jquery-ui-1.10.0.custom.css">
+<link rel="stylesheet" href="${ctx}/lib/ui-layout/layout-default-latest.css">
 
-<!-- 可选的Bootstrap主题文件（一般不用引入） -->
-<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="${ctx}/lib/jquery/jquery.min.js"></script>
+<script src="${ctx}/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="${ctx}/lib/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="${ctx}/lib/ui-layout/jquery.layout-latest.js"></script>

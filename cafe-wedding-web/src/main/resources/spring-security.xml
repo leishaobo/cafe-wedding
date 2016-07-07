@@ -9,6 +9,10 @@
 	
     
 	<http auto-config="true" use-expressions="true" >
+		<intercept-url pattern="/lib/*" access="permitAll"/>
+		<intercept-url pattern="/css/*" access="permitAll"/>
+		<intercept-url pattern="/js/*" access="permitAll"/>
+		<intercept-url pattern="/res/*" access="permitAll"/>
 		<intercept-url pattern="/sys/login/login" access="permitAll"/>
 		<intercept-url pattern="/sys/login/login.html" access="permitAll"/>
 		<intercept-url pattern="/*" access="hasRole('ROLE_ADMIN')"/>
