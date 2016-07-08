@@ -1,0 +1,46 @@
+.ui-layout-pane-west{
+	background-color:#3992d0;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	border: 0px;
+}
+.menu-container{
+	padding: 0px;
+	margin: 0px;
+}
+.leftmenu{
+	list-style: none;
+	padding: 0px;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+}
+.leftmenu > li{
+	padding:5px;
+	padding-bottom: 10px;
+}
+.leftmenu > li > div{
+		height:30px;
+		line-height:18px;
+		padding:4px;
+		padding-right:10px;
+}
+.leftmenu .active_block{
+	background: #626262;
+}
+.leftmenu > li > div > span{
+		margin-left: 10px;
+}
+
+.leftmenu ul li{
+	list-style: none;
+	height:30px;
+	line-height:30px;
+}
+.leftmenu li{
+	cursor: pointer;
+}
+.center-tabs > li > i{
+	position: absolute;right: 7px;top: 5px;cursor: pointer; display: none;
+}
