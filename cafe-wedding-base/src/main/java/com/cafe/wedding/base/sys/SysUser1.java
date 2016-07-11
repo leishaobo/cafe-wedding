@@ -1,4 +1,4 @@
-package org.cafe.wedding.base.sys;
+package com.cafe.wedding.base.sys;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,7 +15,7 @@ import org.cafe.wedding.security.domain.user.BaseSecurityUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public class SysUser extends BaseSecurityUser implements UserDetails{
+public class SysUser1 extends BaseSecurityUser implements UserDetails{
 
 	//private  Set<GrantedAuthority> authorities=Collections.EMPTY_SET;
 	private  boolean is_account_expired;
