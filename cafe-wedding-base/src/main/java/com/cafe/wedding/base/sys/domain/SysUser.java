@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.cafe.wedding.base.BaseDomain;
+import com.cafe.wedding.base.domain.BaseDomain;
 
 @Entity
 @Table(name="sys_user")

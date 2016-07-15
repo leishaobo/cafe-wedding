@@ -1,9 +1,14 @@
-package com.cafe.wedding.base;
+package com.cafe.wedding.base.domain;
 
 import java.io.Serializable;
 import java.sql.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.PersistenceContext;
 
+
+@MappedSuperclass
 public class BaseDomain implements Serializable{
 	private static final long serialVersionUID = 702465083984609980L;
 	
