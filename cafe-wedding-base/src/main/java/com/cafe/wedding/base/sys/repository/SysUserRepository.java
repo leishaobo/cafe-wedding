@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.cafe.wedding.base.repository.BaseRepository;
 import com.cafe.wedding.base.sys.domain.SysUser;
+import com.cafe.wedding.common.seach.Seachable;
 
 
 public interface SysUserRepository extends BaseRepository<SysUser, Long> {

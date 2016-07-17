@@ -8,6 +8,16 @@ public class Condition implements SeachFilter{
 	private String  property;
 	private String value;
 	
+	public Condition() {
+		
+	}
+	
+	public Condition(Operation operation, String property, String value) {
+		this.operation = operation;
+		this.property = property;
+		this.value = value;
+	}
+
 	public Operation getOperation() {
 		return operation;
 	}

@@ -2,10 +2,13 @@ package com.cafe.wedding.base.sys.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import com.cafe.wedding.base.domain.BaseDomain;
 
+@NamedQuery(name="SysUser.findBySearchableAndPageable",query="select s from SysUser s")
 @Entity
 @Table(name="sys_user")
 public class SysUser extends BaseDomain

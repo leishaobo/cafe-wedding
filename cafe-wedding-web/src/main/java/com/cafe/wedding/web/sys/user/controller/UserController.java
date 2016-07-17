@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cafe.wedding.base.sys.domain.SysUser;
 import com.cafe.wedding.base.sys.service.SysUserService;
+import com.cafe.wedding.common.seach.Seachable;
 
 @RequestMapping("/sys/user")
 @Controller
@@ -31,7 +32,7 @@ public class UserController {
 	
 	@RequestMapping("/testJson")
 	@ResponseBody
-	public Object testJson(@PageableDefault(size=20,page=0) Pageable pageable,String realname){
-		return sysUserService.findByRealname(pageable, realname);
+	public Object testJson(Pageable pageable,String realname,Seachable seachable){
+		return sysUserService.findAll(seachable, pageable);
 	}
 }
