@@ -35,6 +35,7 @@
 		<param-value>
 		classpath:spring-security.xml
 		classpath:applicationContext.xml
+		classpath:db.xml
 		</param-value>
 	</context-param>
 

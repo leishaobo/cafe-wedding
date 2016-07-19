@@ -9,5 +9,8 @@
 <script src="${ctx}/lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="${ctx}/lib/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
 <script src="${ctx}/lib/ui-layout/jquery.layout-latest.js"></script>
-<script src="${ctx}/lib/baiduTemplate.js"></script>
+<script type="text/javascript" src="${ctx}/lib/jsrender.js"></script>
+<script type="text/javascript" src="${ctx}/lib/underscore.js"></script>
+
+<script src="${ctx}/js/common.js"></script>
 <script src="${ctx}/js/index.js"></script>

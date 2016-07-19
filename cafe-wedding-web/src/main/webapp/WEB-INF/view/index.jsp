@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>汇婚礼</title>
 <jsp:include page="../../common/head.jsp"></jsp:include>
 <script type="text/javascript">
 	
@@ -28,9 +28,9 @@
 									class="glyphicon glyphicon-chevron-right pull-right"></i>
 							</div>
 							<ul>
-								<li id="www.baidu.com">用户管理</li>
-								<li id="www.baidu.com">资源管理</li>
-								<li id="www.baidu.com">角色管理</li>
+								<li id="${ctx}/sys/user/list.html" >用户管理</li>
+								<li id="${ctx}/sys/user/list.html">资源管理</li>
+								<li id="${ctx}/sys/user/list.html">角色管理</li>
 							</ul>
 						</li>
 						<li>
@@ -39,7 +39,7 @@
 									class="glyphicon glyphicon-chevron-right pull-right"></i>
 							</div>
 							<ul>
-								<li id="www.baidu.com">客户管理</li>
+								<li id="${ctx}/sys/user/list.html">客户管理</li>
 							</ul>
 						</li>
 					</ul>
@@ -53,11 +53,9 @@
 				<div class="col-md-12">
 					<ul class="nav nav-tabs center-tabs">
 						<li role="presentation" class="active"><a href="#home" data-toggle="tab">概览</a></li>
-						<li role="presentation"><a href="#user"  data-toggle="tab" >用户管理</a><i class="glyphicon glyphicon-remove"></i></li>
 					</ul>
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
-						<div role="tabpanel" class="tab-pane fade" id="user">...</div>
+					<div class="tab-content" style="padding-top: 10px;">
+						<div role="tabpanel" class="tab-pane fade in active" id="home"></div>
 					</div>
 				</div>
 			</div>
@@ -65,5 +63,6 @@
 	</div>
 	<div class="ui-layout-south">South</div>
 	<div class="ui-layout-east">East</div>
+	<jsp:include page="template.jsp" flush="true"></jsp:include>
 </body>
 </html>

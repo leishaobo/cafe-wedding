@@ -38,6 +38,9 @@
 	height:30px;
 	line-height:30px;
 }
+.leftmenu ul li.activeli{
+	color: #ECF1EF;
+}
 .leftmenu li{
 	cursor: pointer;
 }
