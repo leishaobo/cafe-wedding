@@ -79,6 +79,8 @@
 							<port>8008</port>
 						</connector>
 					</connectors>
+					<reload>automatic</reload>
+					<scanIntervalSeconds>60</scanIntervalSeconds>
 				</configuration>
 			</plugin>
 		</plugins>

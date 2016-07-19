@@ -1,7 +1,7 @@
 package com.cafe.wedding.common.seach.support;
 
 public enum Operation {
-	equal("=","等于"),
+	eq("=","等于"),
 	lt("<","小于"),
 	lte("<=","小于等于"),
 	gt(">","大于"),
@@ -29,6 +29,7 @@ public enum Operation {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+	
 	
 	
 }

@@ -11,6 +11,7 @@ import com.cafe.wedding.base.service.impl.BaseServiceImpl;
 import com.cafe.wedding.base.sys.domain.SysUser;
 import com.cafe.wedding.base.sys.repository.SysUserRepository;
 import com.cafe.wedding.base.sys.service.SysUserService;
+import com.cafe.wedding.common.seach.Seachable;
 
 @Service("sysUserService")
 public class SysUserServiceImpl extends BaseServiceImpl<SysUser, Long> implements SysUserService{
