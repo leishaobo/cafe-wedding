@@ -6,4 +6,17 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>cafe-wedding-demo</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>com.cafe</groupId>
+			<artifactId>cafe-wedding-base</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		 <!-- JAVAEE capacity 开始 -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+	</dependencies>
 </project>

@@ -6,9 +6,17 @@ public enum Operation {
 	lte("<=","小于等于"),
 	gt(">","大于"),
 	gte(">=","大于等于"),
-	l_like("like %%s","左like"),
-	r_like("like %s%","右like"),
-	like("like %s","like");
+	prefixLike("like","前模糊匹配"),
+	prefixNotLike("not like","前模糊不匹配"),
+	suffixLike("like","后缀模糊匹配"),
+	suffixNotLike("not like","后缀模糊不匹配"),
+	like("like","模糊匹配"),
+	in("in","包含"),
+	notIn("not in","不包含"),
+    isNull("is null", "空"),
+    isNotNull("is not null", "非空"),
+	custom(null,"自定义");
+	
 	
 	String code;
 	String desc;
