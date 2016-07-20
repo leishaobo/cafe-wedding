@@ -11,7 +11,8 @@
 		<module>cafe-wedding-web</module>
     <module>cafe-wedding-security</module>
     <module>cafe-wedding-website</module>
-  </modules>
+    <module>cafe-wedding-demo</module>
+	</modules>
 
 	<properties>
 		<spring-version>4.1.4.RELEASE</spring-version>
