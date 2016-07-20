@@ -1,0 +1,45 @@
+body{
+ background:#f5f5f5;
+}
+a{
+	font-family: "微软雅黑";
+	color: #666;
+	font-size: 12px;
+}
+.line{
+	width: 100%;
+	background: red;
+	height: 1px;
+	position: absolute;
+	left: 0px;
+	top:0px;
+}
+
+/*top*/
+.top{
+	height: 36px;
+	line-height: 36px;
+	margin-top:2px;
+	background:#f5f5f5;
+	border-bottom: 1px solid #eee;
+}
+.top a{
+	display: inline-block;
+	text-align: center;
+	padding: 2px;
+	text-decoration: none;
+}
+.top a:hover{
+	color:  #ff9090;
+}
+.top .line{
+	top:36px;
+}
+/*top(end)*/
+
+/*head*/
+.head{
+	height: 100px;
+	padding: 20px;
+}
+/*head(end)*/
