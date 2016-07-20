@@ -3,7 +3,9 @@ package com.cafe.wedding.base.argumentResolver;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
@@ -31,20 +33,21 @@ public class SeachableMethodArgumentResover implements HandlerMethodArgumentReso
 	public Object resolveArgument(MethodParameter parameter,
 			ModelAndViewContainer mavContainer, NativeWebRequest webRequest,
 			WebDataBinderFactory binderFactory) throws Exception {
+		
 		if(Seachable.class.isAssignableFrom(parameter.getParameterType())){
 			Seachable seachable=null;
-			List<String> list=new ArrayList<String>();
+			Map<String,String> params=new LinkedHashMap<String,String>();
 			Iterator<String> it=webRequest.getParameterNames();
 			while(it.hasNext()){
 				String parameterName=it.next();
 				if(parameterName.startsWith(seachable_prefix)){
 					String value=webRequest.getParameter(parameterName);
-					String propertyAndOp=parameterName.substring(seachable_prefix.length()+1);
-					list.add(String.format("%s=%s",propertyAndOp,value));
+					String proAndOp=parameterName.substring(seachable_prefix.length()+1);
+					params.put(proAndOp, value);
 				}
 			}
-			if(list.size()!=0){
-				seachable=SeachRequest.newSeachable(list);
+			if(params.size()!=0){
+				seachable=SeachRequest.newSeachable(params);
 				return seachable;
 			}
 		}
